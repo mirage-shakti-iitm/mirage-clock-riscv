@@ -1,4 +1,5 @@
 (library
  (name        mirage_clock_lwt)
  (public_name mirage-clock-lwt)
- (libraries   mirage-clock lwt))
+ (libraries   mirage-clock lwt)
+ (ocamlopt_flags (-S)))
