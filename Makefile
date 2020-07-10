@@ -1,4 +1,7 @@
-.PHONY: build clean test
+.PHONY: build clean test add-cap-files
+
+add-cap-files:
+	./choose_compartment_strategy.sh $(COMPARTMENT_STRATEGY_CHOICE)
 
 build:
 	dune build @install

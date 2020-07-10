@@ -24,8 +24,9 @@ depends: [
   "mirage-device-riscv" 
 ]
 build: [
-  ["dune" "subst"] {pinned}
-  ["dune" "build" "-x" "riscv" "-p" "mirage-clock" "-j" jobs]
+	[make "add-cap-files"]
+	["dune" "subst"] {pinned}
+	["dune" "build" "-x" "riscv" "-p" "mirage-clock" "-j" jobs]
 ]
 dev-repo: "git+https://github.com/mirage/mirage-clock.git"
 url {

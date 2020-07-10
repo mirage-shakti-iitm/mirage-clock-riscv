@@ -20,6 +20,7 @@ depends: [
   "lwt-riscv"
 ]
 build: [
+  [make "add-cap-files"]
   ["dune" "subst"] {pinned}
   ["dune" "build" "-x" "riscv" "-p" "mirage-clock-lwt" "-j" jobs]
 ]
