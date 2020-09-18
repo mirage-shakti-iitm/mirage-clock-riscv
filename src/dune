@@ -2,4 +2,4 @@
  (name        mirage_clock)
  (public_name mirage-clock)
  (libraries   mirage-device)
- (ocamlopt_flags (-S)))
+ (ocamlopt_flags (-S -function-sections)))
