@@ -1,3 +1,4 @@
+version: "3.1.0"
 opam-version: "2.0"
 maintainer: "anil@recoil.org"
 authors: ["Anil Madhavapeddy" "Daniel C. Bünzli" "Matthew Gray"]
@@ -13,11 +14,10 @@ The Unix implementation of the MirageOS Clock interface uses
 which OS is in use (see [clock_stubs.c](https://github.com/mirage/mirage-clock/blob/master/unix/clock_stubs.c)).
 """
 depends: [
-  "ocaml" {>= "4.04.2"}
-  "dune" {build}
-  "mirage-clock" {>= "1.2.0"}
-  "mirage-clock-lwt" {>= "1.2.0"}
-  "lwt"
+  "ocaml" {>= "4.06.0"}
+  "dune"
+  "dune-configurator"
+  "mirage-clock" {= version}
 ]
 build: [
   ["dune" "subst"] {pinned}

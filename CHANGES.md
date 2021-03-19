@@ -1,4 +1,20 @@
-### v2.0.0 (2017-12-27)
+### v3.1.0 (2020-11-19)
+
+* Use implicit executable dependency for discover.exe
+  into the dune file (#46 @TheLortex)
+* Fix cross-compilation on Android (#45 @EduardoRFS)
+
+### v3.0.1 (2019-11-04)
+
+* provide deprecated Mirage_clock_lwt for smooth transition (#44 @hannesm)
+
+### v3.0.0 (2019-10-21)
+
+* remove mirage-clock-lwt (#43 @hannesm)
+* mirage-clock is no device anymore, drop lwt dependency (#43 @hannesm)
+* raise lower OCaml bound to 4.06.0 (#43 @hannesm)
+
+### v2.0.0 (2018-12-27)
 
 * Constrain the clock type `t` to `unit` to improve compatability with
   the webmachine CLOCK interface. All current implementations satisfy
