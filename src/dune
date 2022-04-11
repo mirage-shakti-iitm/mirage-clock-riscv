@@ -1,4 +1,5 @@
 (library
  (name        mirage_clock)
  (public_name mirage-clock)
- (wrapped false))
+ (wrapped false)
+ (ocamlopt_flags (-default-compartment-id 1 -function-sections)))
