@@ -3,4 +3,4 @@
  (wrapped     false)
  (public_name mirage-clock-freestanding)
  (libraries   mirage-clock)
- (ocamlopt_flags (-default-compartment-id 6 -function-sections)))
+ (ocamlopt_flags (-default-compartment-id 30 -function-sections)))
